@@ -889,6 +889,23 @@ a {
   .desktopFinalCta {
     display: none;
   }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    will-change: auto !important;
+  }
+
+  .caseTitle,
+  .caseVisual {
+    opacity: 1 !important;
+  }
 }
 
 @media (max-width: 430px) {
