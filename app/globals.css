@@ -612,21 +612,22 @@ a {
   .heroSection {
     height: 100svh;
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(0, auto) minmax(clamp(280px, 52svh, 420px), 1fr);
+    grid-template-rows: minmax(0, auto) minmax(clamp(340px, 62svh, 520px), 1fr);
   }
 
   .heroCopy {
     width: 100%;
     min-width: 0;
-    padding: clamp(12px, 3svh, 20px) var(--mobile-gutter) clamp(10px, 1.6svh, 14px);
+    padding: clamp(8px, 1.8svh, 14px) var(--mobile-gutter) clamp(6px, 1svh, 10px);
   }
 
   .brandLogo {
-    width: min(42vw, 164px);
+    width: min(36vw, 140px);
+    margin-bottom: clamp(4px, 0.8svh, 8px);
   }
 
   .heroTitle {
-    font-size: clamp(32px, 10.6vw, 47px);
+    font-size: clamp(28px, 9.2vw, 40px);
   }
 
   .heroTitle span {
@@ -641,8 +642,8 @@ a {
   }
 
   .heroLead {
-    margin-block: clamp(12px, 2.2svh, 18px) clamp(18px, 3svh, 29px);
-    font-size: clamp(13px, 3.8vw, 15px);
+    margin-block: clamp(6px, 1.2svh, 12px) clamp(10px, 1.8svh, 18px);
+    font-size: clamp(12px, 3.4vw, 14px);
   }
 
   .badgeGrid {
@@ -662,12 +663,12 @@ a {
 
   .heroImagePanel {
     height: auto;
-    min-height: clamp(280px, 52svh, 420px);
-    clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+    min-height: clamp(340px, 62svh, 520px);
+    clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
   }
 
   .heroImagePanel img {
-    object-position: 50% 42%;
+    object-position: 50% 38%;
   }
 
   .caseStack {
