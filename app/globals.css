@@ -721,16 +721,31 @@ a {
   }
 
   .caseVisual {
-    position: relative;
-    inset: auto;
-    width: 100%;
-    max-width: none;
-    aspect-ratio: 941 / 489;
-    border-radius: 0;
-    border: none;
-    box-shadow: none;
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    aspect-ratio: unset !important;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    background: transparent !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    inset: unset !important;
     justify-self: stretch;
-    align-self: center;
+  }
+
+  .caseImage {
+    position: relative !important;
+    inset: unset !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: fill !important;
+    border-radius: 0 !important;
+    display: block;
   }
 
   .mobileCaseCta {
