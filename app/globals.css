@@ -721,12 +721,14 @@ a {
   .caseVisual {
     position: relative;
     inset: auto;
-    width: 100%;
-    max-width: none;
+    width: 100vw;
+    max-width: 100vw;
     aspect-ratio: 941 / 489;
     border-radius: 0;
     border: none;
     box-shadow: none;
+    justify-self: stretch;
+    align-self: center;
   }
 
   .mobileCaseCta {
