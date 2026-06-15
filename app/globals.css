@@ -715,16 +715,18 @@ a {
 
   .caseImage {
     height: 100%;
-    border-radius: 12px;
+    border-radius: 0;
   }
 
   .caseVisual {
     position: relative;
     inset: auto;
-    width: calc(100% - (var(--mobile-gutter) * 2));
-    max-width: min(620px, calc((100svh - 305px) * 0.98));
+    width: 100%;
+    max-width: none;
     aspect-ratio: 941 / 489;
-    border-radius: clamp(10px, 3vw, 14px);
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
   }
 
   .mobileCaseCta {
