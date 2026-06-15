@@ -923,7 +923,7 @@ a {
     align-content: space-between;
     justify-items: stretch;
     gap: 0;
-    padding-top: clamp(28px, 5svh, 42px);
+    padding-top: 0;
   }
 
   .caseStack .caseSection,
