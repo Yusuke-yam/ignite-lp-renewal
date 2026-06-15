@@ -315,7 +315,8 @@ a {
   display: contents;
 }
 
-.mobileCaseCta {
+.mobileCaseCta,
+.mobileCaseCtaBottom {
   display: none;
 }
 
@@ -674,10 +675,10 @@ a {
   .caseStack {
     height: 100svh;
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: repeat(4, auto);
     place-items: center;
     align-content: start;
-    gap: clamp(6px, 1.3svh, 10px);
+    gap: 0;
     padding: 0;
     scroll-snap-align: start;
     scroll-snap-stop: always;
@@ -686,33 +687,30 @@ a {
 
   .caseStack .caseSection,
   .caseStack .caseSection + .caseSection {
+    position: relative;
+    display: block;
     width: 100%;
+    height: auto;
     min-height: 0;
     aspect-ratio: auto;
-    height: auto;
-    display: grid;
-    grid-template-rows: auto auto;
-    justify-items: stretch;
-    align-items: center;
-    align-content: center;
-    gap: clamp(7px, 1.4svh, 11px);
     padding: 0;
+    margin: 0;
     scroll-snap-align: none;
     scroll-snap-stop: normal;
     background: transparent;
   }
 
   .caseTitle {
-    position: relative;
-    top: auto;
-    left: auto;
-    width: min(72%, 270px);
-    min-height: clamp(34px, 5svh, 40px);
-    font-size: clamp(17px, 4.8vw, 20px);
-    transform: none;
-    animation-name: sectionReveal;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: min(36%, 135px);
+    min-height: clamp(17px, 2.5svh, 20px);
+    font-size: clamp(8.5px, 2.4vw, 10px);
+    border-radius: clamp(5px, 1.5vw, 7px);
     margin: 0;
-    justify-self: center;
   }
 
   .caseImage {
@@ -859,6 +857,12 @@ a {
     white-space: nowrap;
   }
 
+  .mobileCaseCta.mobileCaseCtaBottom {
+    order: 99;
+    border-top: 2px solid var(--gold-dark);
+    border-bottom: none;
+  }
+
   .finalCtaSection {
     height: 100svh;
     padding: clamp(18px, 5svh, 34px) var(--mobile-gutter) clamp(16px, 4svh, 28px);
@@ -916,6 +920,7 @@ a {
 
   html {
     scroll-behavior: auto;
+    scroll-snap-type: none;
   }
 
   *,
@@ -934,8 +939,8 @@ a {
 
 @media (max-width: 430px) {
   .caseStack {
-    grid-template-rows: repeat(4, auto) auto;
-    align-content: space-between;
+    grid-template-rows: repeat(4, auto);
+    align-content: start;
     justify-items: stretch;
     gap: 0;
     padding-top: 0;
@@ -943,7 +948,7 @@ a {
 
   .caseStack .caseSection,
   .caseStack .caseSection + .caseSection {
-    display: contents;
+    display: block;
   }
 }
 
