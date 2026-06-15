@@ -99,6 +99,17 @@ export default function Home() {
             <p>コーチング・AIのプロが、あなたの未来に伴走します</p>
           </div>
         </section>
+        <div className="mobileCaseCta mobileCaseCtaBottom">
+          <p className="ctaCatch mobileCaseCtaCatch">
+            <span />
+            コーチング×AIで、人生の可能性を広げましょう
+            <span />
+          </p>
+          <DiagnosisCta compact />
+          <div className="ctaFooter mobileCaseCtaFooter">
+            <p>コーチング・AIのプロが、あなたの未来に伴走します</p>
+          </div>
+        </div>
       </div>
     </main>
   );
