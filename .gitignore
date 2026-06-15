@@ -1,0 +1,25 @@
+# dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# production
+build/
+dist/
+
+# local environment files
+.env
+.env.*
+
+# Vercel
+.vercel/
+
+# OS/editor files
+.DS_Store
+*.log
+
+# secrets and keys
+*.pem
+*.key

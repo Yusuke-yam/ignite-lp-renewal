@@ -1,0 +1,42 @@
+{
+  "labels": ["(初案件)", "(3〜4ヶ月目)", "(5〜6ヶ月目)"],
+  "framework": {
+    "preserveOriginalFrame": true,
+    "panel": {
+      "left": 0.22,
+      "top": 0.785,
+      "right": 0.8,
+      "bottom": 0.985,
+      "radius": 16
+    },
+    "label": {
+      "width": 0.25,
+      "top": 0.718,
+      "bottom": 0.785
+    },
+    "amountPositions": [0.14, 0.48, 0.82],
+    "arrowPositions": [0.31, 0.65],
+    "clearBoxWidths": [0.24, 0.3, 0.28],
+    "arrowClearBoxWidth": 0.12,
+    "clearClipRight": 0.765,
+    "clearTop": 0.16,
+    "clearBottom": 0.86,
+    "amountY": 0.48,
+    "labelY": 0.72
+  },
+  "cases": {
+    "case-1": {
+      "source": "public/assets/case-1.png",
+      "output": "public/assets/case-1-revenue-fixed.png",
+      "amounts": ["1万円/月", "10万円/月", "25万円/月"]
+    },
+    "case-2": {
+      "source": "public/assets/case-2.png",
+      "output": "public/assets/case-2-revenue-fixed.png",
+      "amounts": ["5万円/月", "20万円/月", "35万円/月"],
+      "panelRepair": {
+        "redrawFrame": true
+      }
+    }
+  }
+}
