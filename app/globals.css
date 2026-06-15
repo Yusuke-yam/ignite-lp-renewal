@@ -741,7 +741,9 @@ a {
     margin: 0;
     padding: clamp(8px, 1.5svh, 12px) var(--mobile-gutter) clamp(10px, 1.7svh, 14px);
     overflow: hidden;
-    border-top: 2px solid var(--gold-dark);
+    order: -1;
+    border-top: none;
+    border-bottom: 2px solid var(--gold-dark);
     background:
       radial-gradient(circle at 13% 70%, rgba(243, 224, 163, 0.32), transparent 20%),
       radial-gradient(circle at 86% 42%, rgba(243, 224, 163, 0.18), transparent 20%),
