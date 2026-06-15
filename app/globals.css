@@ -676,9 +676,9 @@ a {
     display: grid;
     grid-template-rows: auto auto auto;
     place-items: center;
-    align-content: end;
+    align-content: start;
     gap: clamp(6px, 1.3svh, 10px);
-    padding: clamp(6px, 1.2svh, 10px) 0 0;
+    padding: 0;
     scroll-snap-align: start;
     scroll-snap-stop: always;
     background: #ffffff;
