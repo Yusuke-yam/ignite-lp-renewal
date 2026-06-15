@@ -612,13 +612,13 @@ a {
   .heroSection {
     height: 100svh;
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(0, auto) minmax(0, 1fr);
+    grid-template-rows: minmax(0, auto) minmax(clamp(280px, 52svh, 420px), 1fr);
   }
 
   .heroCopy {
     width: 100%;
     min-width: 0;
-    padding: clamp(18px, 5svh, 30px) var(--mobile-gutter) clamp(14px, 2.4svh, 20px);
+    padding: clamp(12px, 3svh, 20px) var(--mobile-gutter) clamp(10px, 1.6svh, 14px);
   }
 
   .brandLogo {
@@ -662,12 +662,12 @@ a {
 
   .heroImagePanel {
     height: auto;
-    min-height: 0;
+    min-height: clamp(280px, 52svh, 420px);
     clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
   }
 
   .heroImagePanel img {
-    object-position: 50% 50%;
+    object-position: 50% 42%;
   }
 
   .caseStack {
